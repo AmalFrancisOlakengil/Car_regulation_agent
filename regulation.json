@@ -1,0 +1,53 @@
+{
+  "brakes": {
+    "required": true,
+    "min_count": 4,
+    "allowed_types": ["Disc", "Drum", "ABS"],
+    "notes": "Minimum 4 functional brake systems required"
+  },
+  "wheels": {
+    "required": true,
+    "min_count": 4,
+    "max_count": 6,
+    "allowed_materials": ["Alloy", "Steel"],
+    "notes": "Standard passenger vehicles must have 4 to 6 wheels"
+  },
+  "steering": {
+    "required": true,
+    "allowed_types": ["Power", "Hydraulic", "Manual"],
+    "notes": "Steering system must be responsive and approved type"
+  },
+  "oil": {
+    "required": true,
+    "min_capacity_liters": 3.5,
+    "allowed_types": ["Synthetic", "Semi-Synthetic", "Mineral"],
+    "notes": "Oil capacity should meet engine requirements"
+  },
+  "headlights": {
+    "required": true,
+    "allowed_types": ["LED", "Halogen", "Xenon"],
+    "min_count": 2,
+    "notes": "Must have at least two working front-facing headlights"
+  },
+  "seatbelts": {
+    "required": true,
+    "min_count": 4,
+    "notes": "Each passenger seat must be equipped with a seatbelt"
+  },
+  "airbags": {
+    "required": true,
+    "min_count": 2,
+    "notes": "Driver and front passenger airbags are mandatory"
+  },
+  "emission": {
+    "required": true,
+    "standard": "BS6",
+    "notes": "Vehicle must comply with Bharat Stage 6 (BS6) emission norms"
+  },
+  "mirrors": {
+    "required": true,
+    "min_count": 2,
+    "types": ["Rear-view", "Side-view"],
+    "notes": "Minimum two mirrors required: one rear-view and one side-view"
+  }
+}
